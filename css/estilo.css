@@ -401,4 +401,5 @@ p{margin:0 0 var(--e-16);max-width:64ch}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;
                        transition-duration:.01ms !important}
   .revelar{opacity:1;transform:none}
+  .hero-video{display:none}   /* se queda la foto de debajo */
 }
