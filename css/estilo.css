@@ -1,4 +1,4 @@
-/* Arrocería A Fuego Lento (Cabanyal, València) — sistema propio.
+/* Arrocería A Fuego Lento (Poblats Marítims, València) — sistema propio.
    Todo el color sale de sus propios materiales, no de una paleta inventada:
      · el azul marino y el naranja llama son los de SU LOGO
      · la base blanca es su comedor real (manteles blancos, mucha luz)
@@ -96,6 +96,10 @@ p{margin:0 0 var(--e-16);max-width:64ch}
 .cta.clara:hover{background:#fff;color:var(--marino-hondo);transform:translateY(-2px)}
 .cta.contorno-claro{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
 .cta.contorno-claro:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
+.cta.whatsapp{background:#167e3d;border-color:#167e3d;color:#fff}
+.cta.whatsapp:hover{background:#126933;border-color:#126933;box-shadow:0 14px 26px -14px rgba(18,105,51,.6)}
+.cta.whatsapp svg{width:15px;height:15px;flex:0 0 auto;fill:currentColor}
+.cta.reserva.whatsapp{padding:.72rem 1.35rem;font-size:.66rem}
 .botonera{display:flex;flex-wrap:wrap;gap:var(--e-12);margin-top:var(--e-32)}
 
 .enlace-flecha{
@@ -133,6 +137,18 @@ p{margin:0 0 var(--e-16);max-width:64ch}
 }
 .nav-principal a:hover,.nav-principal a[aria-current="page"]{color:#fff}
 .nav-principal a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+
+.selector-idioma{display:flex;border:1px solid rgba(255,255,255,.4);border-radius:999px;overflow:hidden;flex:0 0 auto}
+.selector-idioma a{
+  color:rgba(255,255,255,.85);text-decoration:none;font-size:.7rem;font-weight:700;
+  letter-spacing:.08em;padding:.3rem .6rem;transition:background .25s var(--curva),color .25s var(--curva);
+}
+.selector-idioma a:hover{background:rgba(255,255,255,.16);color:#fff}
+.selector-idioma a[aria-current="true"]{background:#fff;color:var(--marino-hondo)}
+.cabecera.compacta .selector-idioma,.cabecera.solida .selector-idioma{border-color:var(--borde)}
+.cabecera.compacta .selector-idioma a,.cabecera.solida .selector-idioma a{color:var(--tinta-suave)}
+.cabecera.compacta .selector-idioma a:hover,.cabecera.solida .selector-idioma a:hover{background:var(--superficie-2);color:var(--marino)}
+.cabecera.compacta .selector-idioma a[aria-current="true"],.cabecera.solida .selector-idioma a[aria-current="true"]{background:var(--marino);color:#fff}
 
 .cabecera.compacta,.cabecera.solida{
   background:rgba(253,252,250,.96);backdrop-filter:blur(10px);
@@ -373,6 +389,7 @@ p{margin:0 0 var(--e-16);max-width:64ch}
   .cabecera .nav-principal a:hover,.cabecera .nav-principal a[aria-current="page"]{color:var(--llama-texto)}
   .cabecera.menu-abierto .nav-principal{transform:none;opacity:1;pointer-events:auto}
   .cabecera .cta.reserva{display:none}
+  .nav-principal .cta.whatsapp{margin-top:var(--e-12)}
   .cabecera{padding:var(--e-12) var(--e-24)}
   .cabecera-derecha{gap:var(--e-12)}
   .cabecera .marca small{display:none}
